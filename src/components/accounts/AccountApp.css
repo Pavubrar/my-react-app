@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.title-section {
+    text-align: center;
+    padding: 20px;
+}
+
+
+#idGridContainer {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+#idSummaryPanel {
+    background-color: #7D99FE;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr 1fr 4fr;
+    gap: 15px 15px;
+    text-align: left;
+    padding: 10px 50px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.subheading {
+    grid-column-start: span 2;
+}
+
+.subheading2 {
+    text-align: center;
+}
+
+.form > * > *{
+    margin: 5px 10px 5px 5px;
+}
+#idadd{
+    color: rgb(92, 15, 235);
+    border-radius: 45%;
+    height: 30px;
+    width: auto;
+    border-color: darkcyan;
+}
+#idadd:hover {
+background-color: darkgoldenrod;
+}
+
+#idAccountList {
+    list-style-type: none;
+   
+}
+
+.list-section {
+grid-row-start: span 2;
+}
+
+#idNewAccountName {
+    width: 100px;
+}
+
+#idAccountMessage {
+    color: rgb(214, 6, 6);
+}
+
+
+#idCardPanel {
+    
+    background-color: #DDE4FF;
+    height: 700px;
+    text-align: center;
+    padding: 10px;
+    border: solid black;
+}
+
+.card {
+    background-color: #FFE09B;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card > * {
+    margin: 15px 3px 5px 3px;
+}
+
+.delete-button{
+    display: block;
+    float:right;
+    position:relative;
+    top:-107px;
+    right: -18px;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+/* --- To remove arrow buttons on number input--- */
+.amount-input-dollar::-webkit-outer-spin-button,
+.amount-input-dollar::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.amount-input-dollar[type=number] {
+    -moz-appearance:textfield; /* For Firefox */
+    width: 5em;
+}
+
+/* --- Add dollar sign to number field --- */
+.input-symbol-dollar {
+    position: relative;
+}
+.input-symbol-dollar input {
+    padding-left:13px;
+    width: 7em;
+}
+.input-symbol-dollar:before {
+    position: absolute;
+    top: 1px;
+    content:"$";
+    left: 5px;
+    color: black;
+}

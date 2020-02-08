@@ -1,0 +1,128 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.title-section {
+  text-align: center;
+  padding: 20px;
+}
+
+
+#idGridContainer {
+  display: grid;
+  grid-template-columns: minmax(375px, 500px) auto;
+  
+  /* background-color: #b8860b ; */
+  
+  border-style: groove;
+  
+}
+
+#idSummaryPanel {
+  
+  /* background-color: #b8860b; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 4fr;
+  gap: 15px 15px;
+  text-align: left;
+  padding: 10px 0px 10px 30px;
+  height: 750px;
+}
+.topnav{
+  background-color:#dc143c;
+  background: -webkit-linear-gradient(to right, rgb(252, 60, 2), rgb(243, 123, 68) );
+  background: linear-gradient(to right, rgb(252, 60, 2), rgb(243, 123, 68));
+}
+/* #root{
+  background-image: url("C:\Users\Owner\code\cohort3\react-02\src\icons\katie-harp-dRCjgmc4B8I-unsplash.jpg");
+} */
+.hidden {
+  visibility: hidden;
+}
+
+.subheading {
+  grid-column-start: span 2;
+  color:#006400;
+}
+
+.subheading2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: left;
+  margin-left: 100px;
+  color:#006400;
+}
+
+.form  {
+  margin: 5px 10px 0px 0px;
+  width: 100px;
+  justify-items: legacy;
+  font-size: larger;
+}
+.form > input{
+  align-self: auto;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: solid black;
+}
+
+#idCreateCityMessage {
+  color: rgb(214, 6, 6);
+}
+
+#idFetchError {
+  color: rgb(214, 6, 6);
+}
+
+#idMapPanel {
+  display: grid;
+  /* grid-template-columns: 1fr 4fr; */
+  grid-template-columns: minmax(375px, 500px) auto;
+  grid-template-rows: 1fr 1fr 4fr;
+  height: 750px;
+  text-align: left;
+  padding: 10px;
+}
+
+.map {
+  background-image: url("C:\Users\Owner\code\cohort3\react-02\src\icons\Alberta.png"); /* created from GOA opendata */
+  opacity: 0.75;
+  width: 330px;
+  height: 550px;
+  /* margin: auto; */
+}
+
+.city-point:hover {
+  cursor: pointer;
+}
+
+.city-selected {
+  stroke: rgb(0, 128, 255);
+  stroke-width: 3;
+}
+
+#idSelectedCity {
+  margin: 0px;
+}
+
+#idCityTools * {
+  margin: 2px;
+}
+
+#idPopChange {
+  width: 100px;
+}
+
+#idDelete {
+  border-color: red;
+  border-width: medium;
+}
+
+#idCityMessage {
+  color: rgb(0, 128, 255);
+}

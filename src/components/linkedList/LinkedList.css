@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.page-title,
+h2 {
+  text-align: center;
+  color: grey;
+}
+#right-btns {
+  border-radius: 5px;
+  width: auto;
+  align-self: center;
+  color: gray;
+}
+
+.left-input-label,
+.results-label {
+  float: center;
+  clear: left;
+  width: 150px;
+  text-align: left;
+}
+
+.left-input,
+.results-span {
+  float: center;
+  width: 200px;
+}
+
+form {
+  margin: 10px;
+}
+
+.para-left-card-name,
+.para-left-card-output {
+  margin: 0px;
+}
+
+#resultsLinkedList {
+  margin: 30px 30px 30px 75px;
+  height: 50%;
+  width: 70%;
+  background-color: whitesmoke;
+  border: solid gray 3px;
+  border-radius: 15px;
+  justify-self: center;
+}
+
+#reset {
+  width: 50px;
+  outline: none !important;
+  margin: 0px !important;
+  border-radius: 0px;
+  border: solid #fff 1px;
+}
+
+/* .hidden {
+  visibility: hidden;
+} */
+
+#node-list,
+#node-list-current {
+  margin: 0px !important;
+}
+
+#resultsRender {
+  margin: 5px 5px 5px 110px;
+  height: 75%;
+  width: 45%;
+  background-color: whitesmoke;
+  border: solid transparent 0.5px;
+  border-radius: 15px;
+  justify-self: center;
+  text-align: left;
+}

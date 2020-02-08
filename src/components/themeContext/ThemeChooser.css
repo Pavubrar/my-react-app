@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400&display=swap");
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 60vmin;
+}
+
+.App-header-theme {
+  background-color: #c0c0c0;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: top;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 50px;
+}

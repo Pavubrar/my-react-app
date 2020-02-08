@@ -1,0 +1,23 @@
+.App-logo  {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  .App-logo g {
+    fill: salmon;
+  }
+  .App-logo path {
+    stroke: goldenrod;
+    stroke-width: 10px;
+    fill:red;
+    stroke-dasharray: 25px 11px;
+    animation: infinite alternate linear;
+  
+  }
+  @keyframes orbit { to { stroke-dashoffset: 25px;}}
+  
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 10s linear;
+    }
+  }

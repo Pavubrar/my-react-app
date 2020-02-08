@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+/* .App-logo  {
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-logo g {
+  fill: salmon;
+}
+.App-logo path {
+  stroke: goldenrod;
+  stroke-width: 10px;
+  fill:red;
+  stroke-dasharray: 25px 11px;
+  animation: infinite alternate linear;
+
+}
+@keyframes orbit { to { stroke-dashoffset: 25px;}}
+*/
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+} 
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+    .topnav{
+      background-color:hsl(30, 79%, 85%);
+      overflow: hidden;
+    }
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .icon-img{
+      
+      margin: 25px ;
+      height: 100px;
+      background-color: cornflowerblue;
+    }
+    .icon-img:visited{
+      color: red;
+    }
+    .icon-img:hover {
+      opacity: 1;
+      transform:scale(2);
+      transition: all 4s ease;
+      border-radius: 100%;
+      color: coral;
+      animation: spin 10s infinite linear;
+    }
+     /* @keyframes slide {
+      0% {
+        transform: translateY(-135px);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+      80%{
+        transform: translateY(-135px);
+      }
+    }  */
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+   
+
+

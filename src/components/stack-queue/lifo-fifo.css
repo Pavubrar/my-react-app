@@ -1,0 +1,29 @@
+.lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px auto;
+  justify-items: center;
+  border: solid black;
+}
+
+.list {
+  width: 100px;
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  text-align: center;
+  border: solid 3px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.next {
+  text-align: center;
+  border: solid 3px;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.shape {
+  padding: 20px;
+}
